@@ -8,6 +8,20 @@ app.controller('AppCtrl', ['$scope', '$timeout', '$mdSidenav', '$log',
       return $mdSidenav('right').isOpen();
     };
 
+    //Data of the first highcharts
+    $scope.chartOptions = {
+        title: {
+            text: 'Speed Zones'
+        },
+        xAxis: {
+            categories: ['12:00am', '12:05am', '12:10am']
+        },
+
+        series: [{
+            data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+        }]
+    };
+
     /**
      * Supplies a function that will continue to operate until the
      * time is up.
@@ -68,3 +82,19 @@ app.controller('LeftCtrl', function ($scope, $timeout, $mdSidenav, $log) {
 
     };
 });
+
+
+
+// Directive for generic chart, pass in chart options
+app.directive('hcChart', function () {
+    return {
+        restrict: 'E',
+        template: '<div></div>',
+        scope: {
+            options: '='
+        },
+        link: function (scope, element) {
+            Highcharts.chart(element[0], scope.options);
+        }
+    };
+})
