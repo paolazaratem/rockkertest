@@ -1,0 +1,24 @@
+body{
+	
+}
+
+.navigation{
+	background-color: #1e2025 !important;
+	color: #ffffff !important;
+
+}
+
+.logo{
+	width: 169px;
+  	height: 20px;
+  	margin:auto;
+}
+
+.item-list{
+	margin-left: 10.6px;
+}
+
+.icons-list{
+	width: 16px;
+	height: 11px;
+}

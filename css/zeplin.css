@@ -1,0 +1,38 @@
+/* Color palette */
+
+:root {
+  --light-blue-grey: #bfd0e1;
+}
+
+/* Text styles */
+
+.Text-Style {
+  font-family: ProximaNova;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+  color: #ffffff;
+}
+
+.Text-Style-2 {
+  font-family: ProximaNova;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.36;
+  color: #ffffff;
+}
+
+.Text-Style-4 {
+  font-family: ProximaNova;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.29;
+  color: #7cb2ed;
+}
+
+.Text-Style-3 {
+  font-family: ProximaNova;
+  font-size: 14px;
+  text-align: left;
+  color: #666666;
+}
